@@ -1,0 +1,301 @@
+{
+  "python": {
+    "beginner": [
+      {
+        "question": "define addition in python",
+        "code": ["def add(a, b):", "    return a + b"]
+      },
+      {
+        "question": "define subtraction in python",
+        "code": ["def subtract(a, b):", "    return a - b"]
+      },
+      {
+        "question": "define multiplication in python",
+        "code": ["def multiply(a, b):", "    return a * b"]
+      }
+    ],
+    "easy": [
+      {
+        "question": "define division in python",
+        "code": ["def divide(a, b):", "    return a / b"]
+      },
+      {
+        "question": "calculate the square of a number",
+        "code": ["def square(n):", "    return n * n"]
+      },
+      {
+        "question": "check if a number is even",
+        "code": ["def is_even(n):", "    return n % 2 == 0"]
+      }
+    ],
+    "basic": [
+      {
+        "question": "find the maximum of two numbers",
+        "code": ["def maximum(a, b):", "    return a if a > b else b"]
+      },
+      {
+        "question": "find the minimum of two numbers",
+        "code": ["def minimum(a, b):", "    return a if a < b else b"]
+      },
+      {
+        "question": "calculate absolute value of a number",
+        "code": ["def absolute(n):", "    return abs(n)"]
+      }
+    ],
+    "intermediate": [
+      {
+        "question": "reverse a string",
+        "code": ["def reverse_string(s):", "    return s[::-1]"]
+      },
+      {
+        "question": "concatenate two strings",
+        "code": ["def concat_strings(s1, s2):", "    return s1 + s2"]
+      },
+      {
+        "question": "check if a string is a palindrome",
+        "code": ["def is_palindrome(s):", "    return s == s[::-1]"]
+      }
+    ],
+    "medium": [
+      {
+        "question": "find the maximum in a list",
+        "code": ["def max_in_list(lst):", "    return max(lst)"]
+      },
+      {
+        "question": "calculate the sum of a list",
+        "code": ["def sum_list(lst):", "    return sum(lst)"]
+      },
+      {
+        "question": "sort a list in ascending order",
+        "code": ["def sort_list(lst):", "    return sorted(lst)"]
+      }
+    ],
+    "advanced": [
+      {
+        "question": "remove duplicates from a list",
+        "code": ["def remove_duplicates(lst):", "    return list(set(lst))"]
+      },
+      {
+        "question": "count word frequency in a sentence",
+        "code": [
+          "def word_frequency(sentence):",
+          "    freq = {}",
+          "    for word in sentence.split():",
+          "        freq[word] = freq.get(word, 0) + 1",
+          "    return freq"
+        ]
+      },
+      {
+        "question": "flatten a nested list",
+        "code": ["def flatten(lst):", "    return [item for sublist in lst for item in sublist]"]
+      }
+    ],
+    "hard": [
+      {
+        "question": "fibonacci series using recursion",
+        "code": [
+          "def fibonacci(n):",
+          "    if n <= 1:",
+          "        return n",
+          "    return fibonacci(n-1) + fibonacci(n-2)"
+        ]
+      },
+      {
+        "question": "factorial using recursion",
+        "code": [
+          "def factorial(n):",
+          "    if n == 0:",
+          "        return 1",
+          "    return n * factorial(n-1)"
+        ]
+      },
+      {
+        "question": "generate all permutations of a string",
+        "code": [
+          "from itertools import permutations",
+          "def all_permutations(s):",
+          "    return [''.join(p) for p in permutations(s)]"
+        ]
+      }
+    ],
+    "expert": [
+      {
+        "question": "sort a list of dictionaries by key",
+        "code": ["def sort_by_key(lst, key):", "    return sorted(lst, key=lambda x: x[key])"]
+      },
+      {
+        "question": "merge two dictionaries",
+        "code": ["def merge_dicts(d1, d2):", "    return {**d1, **d2}"]
+      },
+      {
+        "question": "read a file and count word frequency",
+        "code": [
+          "def word_frequency_file(filename):",
+          "    freq = {}",
+          "    with open(filename) as f:",
+          "        for line in f:",
+          "            for word in line.split():",
+          "                freq[word] = freq.get(word, 0) + 1",
+          "    return freq"
+        ]
+      }
+    ]
+  },
+  "javascript": {
+    "beginner": [
+      {
+        "question": "define addition in javascript",
+        "code": ["function add(a, b) {", "    return a + b;", "}"]
+      },
+      {
+        "question": "define subtraction in javascript",
+        "code": ["function subtract(a, b) {", "    return a - b;", "}"]
+      },
+      {
+        "question": "define multiplication in javascript",
+        "code": ["function multiply(a, b) {", "    return a * b;", "}"]
+      }
+    ],
+    "easy": [
+      {
+        "question": "define division in javascript",
+        "code": ["function divide(a, b) {", "    return a / b;", "}"]
+      },
+      {
+        "question": "calculate the square of a number",
+        "code": ["function square(n) {", "    return n * n;", "}"]
+      },
+      {
+        "question": "check if a number is even",
+        "code": ["function isEven(n) {", "    return n % 2 === 0;", "}"]
+      }
+    ],
+    "basic": [
+      {
+        "question": "find the maximum of two numbers",
+        "code": ["function max(a, b) {", "    return a > b ? a : b;", "}"]
+      },
+      {
+        "question": "find the minimum of two numbers",
+        "code": ["function min(a, b) {", "    return a < b ? a : b;", "}"]
+      },
+      {
+        "question": "calculate absolute value of a number",
+        "code": ["function absolute(n) {", "    return Math.abs(n);", "}"]
+      }
+    ],
+    "intermediate": [
+      {
+        "question": "reverse a string",
+        "code": ["function reverseString(s) {", "    return s.split('').reverse().join('');", "}"]
+      },
+      {
+        "question": "concatenate two strings",
+        "code": ["function concatStrings(s1, s2) {", "    return s1 + s2;", "}"]
+      },
+      {
+        "question": "check if a string is a palindrome",
+        "code": ["function isPalindrome(s) {", "    return s === s.split('').reverse().join('');", "}"]
+      }
+    ],
+    "medium": [
+      {
+        "question": "find the maximum in an array",
+        "code": ["function maxInArray(arr) {", "    return Math.max(...arr);", "}"]
+      },
+      {
+        "question": "calculate the sum of an array",
+        "code": ["function sumArray(arr) {", "    return arr.reduce((a,b) => a+b, 0);", "}"]
+      },
+      {
+        "question": "sort an array in ascending order",
+        "code": ["function sortArray(arr) {", "    return arr.sort((a,b) => a-b);", "}"]
+      }
+    ],
+    "advanced": [
+      {
+        "question": "remove duplicates from an array",
+        "code": ["function removeDuplicates(arr) {", "    return [...new Set(arr)];", "}"]
+      },
+      {
+        "question": "count word frequency in a string",
+        "code": [
+          "function wordFrequency(str) {",
+          "    let freq = {};",
+          "    str.split(' ').forEach(word => {",
+          "        freq[word] = (freq[word] || 0) + 1;",
+          "    });",
+          "    return freq;",
+          "}"
+        ]
+      },
+      {
+        "question": "flatten a nested array",
+        "code": ["function flatten(arr) {", "    return arr.flat(Infinity);", "}"]
+      }
+    ],
+    "hard": [
+      {
+        "question": "fibonacci series using recursion",
+        "code": [
+          "function fibonacci(n) {",
+          "    if(n <= 1) return n;",
+          "    return fibonacci(n-1) + fibonacci(n-2);",
+          "}"
+        ]
+      },
+      {
+        "question": "factorial using recursion",
+        "code": [
+          "function factorial(n) {",
+          "    if(n === 0) return 1;",
+          "    return n * factorial(n-1);",
+          "}"
+        ]
+      },
+      {
+        "question": "generate all permutations of a string",
+        "code": [
+          "function allPermutations(str) {",
+          "    if(str.length <= 1) return [str];",
+          "    let result = [];",
+          "    for(let i = 0; i < str.length; i++) {",
+          "        let rest = allPermutations(str.slice(0,i) + str.slice(i+1));",
+          "        rest.forEach(r => result.push(str[i] + r));",
+          "    }",
+          "    return result;",
+          "}"
+        ]
+      }
+    ],
+    "expert": [
+      {
+        "question": "sort an array of objects by key",
+        "code": [
+          "function sortByKey(arr, key) {",
+          "    return arr.sort((a,b) => (a[key] > b[key] ? 1 : -1));",
+          "}"
+        ]
+      },
+      {
+        "question": "merge two objects",
+        "code": ["function mergeObjects(obj1, obj2) {", "    return {...obj1, ...obj2};", "}"]
+      },
+      {
+        "question": "read a file and count word frequency (Node.js)",
+        "code": [
+          "const fs = require('fs');",
+          "function wordFrequencyFile(filename) {",
+          "    let freq = {};",
+          "    const data = fs.readFileSync(filename, 'utf-8');",
+          "    data.split(/\\s+/).forEach(word => {",
+          "        freq[word] = (freq[word] || 0) + 1;",
+          "    });",
+          "    return freq;",
+          "}"
+        ]
+      }
+    ]
+  }
+}
+
