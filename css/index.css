@@ -1,0 +1,21 @@
+#main {
+       height:98vh;
+       display: flex;
+       align-items: center;
+       text-align: center;
+       flex-direction: column;
+}
+div {
+	border: 1px solid black;
+	width: 100%;
+}
+#question_holder {
+	height: 20%;
+}
+#answer_to_questions {
+	height: 40%;
+}
+#answers_options {
+	height: 40%;
+}
+
