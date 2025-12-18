@@ -14,8 +14,14 @@ div {
 }
 #answer_to_questions {
 	height: 40%;
+	width: 70%;
 }
 #answers_options {
 	height: 40%;
 }
-
+#navigation {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+}
