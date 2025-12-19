@@ -4,17 +4,24 @@ let shuffled_answers = document.getElementById('answers_options');
 let data = [];
 let loaded_data = [];
 let codes = [];
-let shuffled_answers = [];
+let shuffled[];
 
 fetch('quesstions.json').
 	then(response => response.json()).
 	then(data =>	{
 		loaded_data = data;
 		data.forEach(item =>
-			item.question = question.innerHTML;
-			item.codes = codes;
+			question.innerHTML = item.question;
+			shuffled_answers_copy = [...item.codes];
 
-			shuffled_answers = codes.copy();
+			shuffled = shuffled_answers(shuffled_answers_copy);
+			shuffled.forEach(answer => {
+				const divs = document.createElement('div');
+				divs.textContent = answer;
+				shuflled_answers.appendChild(divs);
+			});
+	)}).
+	catch(error => console.error('Error', error);
 	/**
 		data => loaded_questions
 
@@ -32,11 +39,12 @@ fetch('quesstions.json').
 	
 
 function shuffleanswers(array) {
-	for(var i = array.length - 1; i > 0; i--) {
+	const a = [...array];
+	for(let i = a.length - 1; i > 0; i--) {
 		var j = Math.floor(Math.random() * i + 1));
-		var temp = array[i];
-		array[i] = array[j];
-		array[j] = temp;
+		var temp = ay[i];
+		a[i] = a[j];
+		a[j] = temp;
 	}
 }
 
