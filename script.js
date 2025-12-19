@@ -41,10 +41,11 @@ fetch('quesstions.json').
 function shuffleanswers(array) {
 	const a = [...array];
 	for(let i = a.length - 1; i > 0; i--) {
-		var j = Math.floor(Math.random() * i + 1));
+		var j = Math.floor(Math.random() * (i + 1));
 		var temp = a[i];
 		a[i] = a[j];
 		a[j] = temp;
 	}
+	return a;
 }
 
