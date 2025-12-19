@@ -4,21 +4,21 @@ let shuffled_answers = document.getElementById('answers_options');
 let data = [];
 let loaded_data = [];
 let codes = [];
-let shuffled[];
+let shuffled = [];
 
 fetch('quesstions.json').
 	then(response => response.json()).
 	then(data =>	{
 		loaded_data = data;
-		data.forEach(item =>
+		data.forEach(item => {
 			question.innerHTML = item.question;
 			shuffled_answers_copy = [...item.codes];
 
-			shuffled = shuffled_answers(shuffled_answers_copy);
+			shuffled = shuffleanswers(shuffled_answers_copy);
 			shuffled.forEach(answer => {
 				const divs = document.createElement('div');
 				divs.textContent = answer;
-				shuflled_answers.appendChild(divs);
+				shuffled_answers.appendChild(divs);
 			});
 	)}).
 	catch(error => console.error('Error', error);
@@ -42,7 +42,7 @@ function shuffleanswers(array) {
 	const a = [...array];
 	for(let i = a.length - 1; i > 0; i--) {
 		var j = Math.floor(Math.random() * i + 1));
-		var temp = ay[i];
+		var temp = a[i];
 		a[i] = a[j];
 		a[j] = temp;
 	}
