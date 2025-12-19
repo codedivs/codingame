@@ -2,22 +2,36 @@ let question = document.getElementById('question_holder');
 let correct_answers = document.getElementById('answer_to_questions');
 let shuffled_answers = document.getElementById('answers_options');
 let data = [];
-let correct_answer_format = [];
+let loaded_data = [];
+let codes = [];
+let shuffled_answers = [];
 
 fetch('quesstions.json').
-	then(r = r.ok ? r.json() : Promise.reject('Response not OK')).
-	then(data =>  {
-		data = data;
-		data.forEach(item => {
-			item.question = question;
-			items.codes = correct_answer_format;
-			shuffled_answers = shuffleanswers(item.codes);
-		
+	then(response => response.json()).
+	then(data =>	{
+		loaded_data = data;
+		data.forEach(item =>
+			item.question = question.innerHTML;
+			item.codes = codes;
 
-			first touched, first move top hierachy, 
-			second touched, second move to second div
+			shuffled_answers = codes.copy();
+	/**
+		data => loaded_questions
 
-function shuffleanswers(array_to_shuffle) {
+	loaded_questions.forEach(item =>
+	item.question = question.innerHTML;
+	item.codes = correct_answer_format;
+	correct_answer_format = shuffled_answers_copy;
+	shuffled_answers = shuffleanswers(shuffled_answers_copy;
+	shuffled_answers.innerHTML;
+	
+	)
+	).
+	catch(error => console.error('Error', error));
+	**/
+	
+
+function shuffleanswers(array) {
 	for(var i = array.length - 1; i > 0; i--) {
 		var j = Math.floor(Math.random() * i + 1));
 		var temp = array[i];
@@ -25,4 +39,4 @@ function shuffleanswers(array_to_shuffle) {
 		array[j] = temp;
 	}
 }
-function allow_user_drop_answers(
+
