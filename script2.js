@@ -4,15 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const optionsPad = document.getElementById('answers_options');
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
+  const startBtn = document.getElementById('startBtn');
+  const restartBtn = document.getElementById('restartBtn');
+  const levelSelect = document.getElementById('levelSelect');
+  const languageSelect = document.getElementById('languageSelect');
+  const scoreEl = document.getElementById('score');
 
-  let questionsData = {}; // Raw data from JSON
+  let questionsData = {};
   let availableQuestions = [];
   let quiz = [];
   let currentIndex = 0;
   let score = 0;
 
-  let selectedLanguage = 'python'; // default
-  let selectedLevel = 'beginner';  // default
+  let selectedLanguage = 'python';
+  let selectedLevel = 'beginner';
+
+  const LEVEL_ORDER = ['beginner', 'intermediate', 'advanced'];
 
   // ---------- UTILS ----------
   function shuffle(array) {
@@ -48,7 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
     selectedLanguage = data.selectedLanguage || 'python';
     selectedLevel = data.selectedLevel || 'beginner';
 
-    // Update UI selectors if you add real selects later
+    levelSelect.value = selectedLevel;
+    languageSelect.value = selectedLanguage;
+
     return true;
   }
 
@@ -64,6 +73,9 @@ document.addEventListener('DOMContentLoaded', () => {
     score = 0;
     localStorage.removeItem('quiz-progress');
     renderQuestion();
+    updateScoreDisplay();
+    prevBtn.disabled = false;
+    nextBtn.disabled = false;
   }
 
   // ---------- LOAD QUESTIONS ----------
@@ -74,14 +86,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (loadProgress() && quiz.length > 0) {
         renderQuestion();
+        updateScoreDisplay();
       } else {
-        startNewQuiz();
+        // Default view before starting
+        questionHolder.textContent = "Select level/language and click 'Start Quiz' to begin!";
       }
     })
     .catch(err => {
       console.error('Fetch error:', err);
       questionHolder.textContent = "Error loading questions.";
     });
+
+  // ---------- BUTTONS ----------
+  startBtn.addEventListener('click', () => {
+    selectedLevel = levelSelect.value;
+    selectedLanguage = languageSelect.value;
+    startNewQuiz();
+  });
+
+  restartBtn.addEventListener('click', () => {
+    if (confirm("Are you sure you want to restart the quiz? Progress will be lost.")) {
+      selectedLevel = levelSelect.value;
+      selectedLanguage = languageSelect.value;
+      startNewQuiz();
+    }
+  });
 
   // ---------- RENDER ----------
   function renderQuestion() {
@@ -93,17 +122,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const q = quiz[currentIndex];
     questionHolder.textContent = `${currentIndex + 1}/${quiz.length}. ${q.question}`;
 
-    // Clear pads
     answerPad.innerHTML = '';
     optionsPad.innerHTML = '';
 
-    // Shuffle code lines and create draggable divs
     const shuffledLines = shuffle([...q.code]);
     shuffledLines.forEach(line => {
       optionsPad.appendChild(createCodeLineDiv(line));
     });
 
-    // Update score display (you can add a score element in HTML)
     updateScoreDisplay();
   }
 
@@ -127,19 +153,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---------- DRAG AND DROP ----------
   [answerPad, optionsPad].forEach(pad => {
-    pad.addEventListener('dragover', (e) => {
-      e.preventDefault();
-      pad.classList.add('drag-over');
-    });
-
-    pad.addEventListener('dragleave', () => {
-      pad.classList.remove('drag-over');
-    });
-
+    pad.addEventListener('dragover', (e) => e.preventDefault());
     pad.addEventListener('drop', (e) => {
       e.preventDefault();
-      pad.classList.remove('drag-over');
-
       const text = e.dataTransfer.getData('text/plain');
       const dragging = document.querySelector('.dragging');
       if (dragging && dragging.textContent === text) {
@@ -149,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Fallback: keep click-to-move for touch devices
+  // Touch/click fallback
   document.addEventListener('click', (e) => {
     if (e.target.classList.contains('answer')) {
       const div = e.target;
@@ -166,10 +182,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const q = quiz[currentIndex];
     const answeredLines = [...answerPad.children].map(div => div.textContent.trim());
 
-    if (answeredLines.length !== q.code.length) {
-      answerPad.classList.remove('correct', 'incorrect');
-      return;
-    }
+    answerPad.classList.remove('correct', 'incorrect');
+
+    if (answeredLines.length !== q.code.length) return;
 
     const isCorrect = answeredLines.every((line, i) => line === q.code[i].trim());
 
@@ -184,11 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateScoreDisplay() {
-    // Add a score display in HTML like: <div id="score">Score: 0/20</div>
-    const scoreEl = document.getElementById('score');
-    if (scoreEl) {
-      scoreEl.textContent = `Score: ${score}/${quiz.length}`;
-    }
+    scoreEl.textContent = `Score: ${score}/${quiz.length}`;
   }
 
   // ---------- NAVIGATION ----------
@@ -211,31 +222,56 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---------- END QUIZ ----------
   function endQuiz() {
     const percent = Math.round((score / quiz.length) * 100);
-    questionHolder.innerHTML = `
+    const passed = score >= 16; // 80% of 20
+
+    let message = `
       <h2>Quiz Complete!</h2>
       <p>You scored <strong>${score}/${quiz.length}</strong> (${percent}%)</p>
       <p>${percent >= 80 ? 'Great job! 🎉' : 'Keep practicing! 💪'}</p>
     `;
+
+    if (passed) {
+      const currentIdx = LEVEL_ORDER.indexOf(selectedLevel);
+      if (currentIdx < LEVEL_ORDER.length - 1) {
+        const nextLevel = LEVEL_ORDER[currentIdx + 1];
+        message += `
+          <p><strong>Congratulations!</strong> You've unlocked the <em>${nextLevel.charAt(0).toUpperCase() + nextLevel.slice(1)}</em> level!</p>
+          <button id="nextLevelBtn">Go to ${nextLevel.charAt(0).toUpperCase() + nextLevel.slice(1)} Level</button>
+        `;
+      } else {
+        message += `
+          <p><strong>Master!</strong> You've completed all levels!</p>
+          <button id="playOnBtn">Play On (More ${selectedLevel} questions)</button>
+        `;
+      }
+    }
+
+    message += `<button id="newQuizBtn">Start New Quiz (Same Settings)</button>`;
+
+    questionHolder.innerHTML = message;
     answerPad.innerHTML = '';
     optionsPad.innerHTML = '';
     prevBtn.disabled = true;
     nextBtn.disabled = true;
+
+    // Attach buttons
+    if (passed) {
+      const currentIdx = LEVEL_ORDER.indexOf(selectedLevel);
+      if (currentIdx < LEVEL_ORDER.length - 1) {
+        document.getElementById('nextLevelBtn').addEventListener('click', () => {
+          selectedLevel = LEVEL_ORDER[currentIdx + 1];
+          levelSelect.value = selectedLevel;
+          startNewQuiz();
+        });
+      } else {
+        document.getElementById('playOnBtn')?.addEventListener('click', () => {
+          startNewQuiz();
+        });
+      }
+    }
+
+    document.getElementById('newQuizBtn').addEventListener('click', () => {
+      startNewQuiz();
+    });
   }
-
-  // ---------- MENU CONTROLS (optional enhancement) ----------
-  // Example: add real selectors in HTML and connect them
-  // <select id="languageSelect"><option>python</option><option>javascript</option></select>
-  // <select id="levelSelect"><option>beginner</option><option>intermediate</option><option>advanced</option></select>
-
-  // Then add:
-  /*
-  document.getElementById('languageSelect')?.addEventListener('change', (e) => {
-    selectedLanguage = e.target.value;
-    startNewQuiz();
-  });
-  document.getElementById('levelSelect')?.addEventListener('change', (e) => {
-    selectedLevel = e.target.value;
-    startNewQuiz();
-  });
-  */
 });
