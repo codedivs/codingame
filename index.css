@@ -118,24 +118,3 @@ button {
 button:hover {
     background-color: #1177bb;
 }
-.answer {
-  padding: 10px;
-  margin: 5px;
-  background: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  cursor: move;
-  user-select: none;
-}
-
-.answer.dragging {
-  opacity: 0.5;
-}
-
-#answer_to_questions.drag-over,
-#answers_options.drag-over {
-  background: #e0ffe0;
-}
-
-.correct { border: 3px solid green !important; }
-.incorrect { border: 3px solid red !important; }
