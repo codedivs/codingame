@@ -20,7 +20,7 @@ div {
     border-radius: 5px;
 }
 
-#contorls {
+#controls {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
