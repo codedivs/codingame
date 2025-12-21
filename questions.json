@@ -1,301 +1,602 @@
 {
-  "python": {
-    "level1": [
+  "beginner": {
+      "python": [
       {
-        "question": "define addition in python",
-        "code": ["def add(a, b):", "    return a + b"]
-      },
-      {
-        "question": "define subtraction in python",
-        "code": ["def subtract(a, b):", "    return a - b"]
-      },
-      {
-        "question": "define multiplication in python",
-        "code": ["def multiply(a, b):", "    return a * b"]
-      }
-    ],
-    "level2": [
-      {
-        "question": "define division in python",
-        "code": ["def divide(a, b):", "    return a / b"]
-      },
-      {
-        "question": "calculate the square of a number",
-        "code": ["def square(n):", "    return n * n"]
-      },
-      {
-        "question": "check if a number is even",
-        "code": ["def is_even(n):", "    return n % 2 == 0"]
-      }
-    ],
-    "level3": [
-      {
-        "question": "find the maximum of two numbers",
-        "code": ["def maximum(a, b):", "    return a if a > b else b"]
-      },
-      {
-        "question": "find the minimum of two numbers",
-        "code": ["def minimum(a, b):", "    return a if a < b else b"]
-      },
-      {
-        "question": "calculate absolute value of a number",
-        "code": ["def absolute(n):", "    return abs(n)"]
-      }
-    ],
-    "level4": [
-      {
-        "question": "reverse a string",
-        "code": ["def reverse_string(s):", "    return s[::-1]"]
-      },
-      {
-        "question": "concatenate two strings",
-        "code": ["def concat_strings(s1, s2):", "    return s1 + s2"]
-      },
-      {
-        "question": "check if a string is a palindrome",
-        "code": ["def is_palindrome(s):", "    return s == s[::-1]"]
-      }
-    ],
-    "level5": [
-      {
-        "question": "find the maximum in a list",
-        "code": ["def max_in_list(lst):", "    return max(lst)"]
-      },
-      {
-        "question": "calculate the sum of a list",
-        "code": ["def sum_list(lst):", "    return sum(lst)"]
-      },
-      {
-        "question": "sort a list in ascending order",
-        "code": ["def sort_list(lst):", "    return sorted(lst)"]
-      }
-    ],
-    "level6": [
-      {
-        "question": "remove duplicates from a list",
-        "code": ["def remove_duplicates(lst):", "    return list(set(lst))"]
-      },
-      {
-        "question": "count word frequency in a sentence",
+        "question": "Check if a number is even",
         "code": [
-          "def word_frequency(sentence):",
-          "    freq = {}",
-          "    for word in sentence.split():",
-          "        freq[word] = freq.get(word, 0) + 1",
-          "    return freq"
+          "def is_even(n):",
+          "    return n % 2 == 0"
         ]
       },
       {
-        "question": "flatten a nested list",
-        "code": ["def flatten(lst):", "    return [item for sublist in lst for item in sublist]"]
+        "question": "Add two numbers",
+        "code": [
+          "def add(a, b):",
+          "    return a + b"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "def subtract(a, b):",
+          "    return a - b"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "def multiply(a, b):",
+          "    return a * b"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "def divide(a, b):",
+          "    return a / b"
+        ]
+      },
+      {
+        "question": "Check if a number is positive",
+        "code": [
+          "def is_positive(n):",
+          "    return n > 0"
+        ]
+      },
+      {
+        "question": "Check if a number is negative",
+        "code": [
+          "def is_negative(n):",
+          "    return n < 0"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "def square(n):",
+          "    return n * n"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "def cube(n):",
+          "    return n * n * n"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "def maximum(a, b):",
+          "    return a if a > b else b"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "def minimum(a, b):",
+          "    return a if a < b else b"
+        ]
+      },
+      {
+        "question": "Calculate absolute value",
+        "code": [
+          "def absolute(n):",
+          "    return abs(n)"
+        ]
+      },
+      {
+        "question": "Check if a number is divisible by 3",
+        "code": [
+          "def divisible_by_3(n):",
+          "    return n % 3 == 0"
+        ]
+      },
+      {
+        "question": "Check if a number is divisible by 5",
+        "code": [
+          "def divisible_by_5(n):",
+          "    return n % 5 == 0"
+        ]
+      },
+      {
+        "question": "Check if a number is divisible by 10",
+        "code": [
+          "def divisible_by_10(n):",
+          "    return n % 10 == 0"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "def is_odd(n):",
+          "    return n % 2 != 0"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "def remainder(a, b):",
+          "    return a % b"
+        ]
+      },
+      {
+        "question": "Calculate sum of three numbers",
+        "code": [
+          "def sum_three(a, b, c):",
+          "    return a + b + c"
+        ]
+      },
+      {
+        "question": "Calculate product of three numbers",
+        "code": [
+          "def product_three(a, b, c):",
+          "    return a * b * c"
+        ]
+      },
+      {
+        "question": "Check if a number is a multiple of 7",
+        "code": [
+          "def multiple_of_7(n):",
+          "    return n % 7 == 0"
+        ]
+      },
+      {
+        "question": "Check if a number is divisible by both 2 and 3",
+        "code": [
+          "def divisible_by_2_and_3(n):",
+          "    return n % 2 == 0 and n % 3 == 0"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "def celsius_to_fahrenheit(c):",
+          "    return (c * 9/5) + 32"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "def fahrenheit_to_celsius(f):",
+          "    return (f - 32) * 5/9"
+        ]
+      },
+      {
+        "question": "Check if a number is greater than 100",
+        "code": [
+          "def greater_than_100(n):",
+          "    return n > 100"
+        ]
+      },
+      {
+        "question": "Check if a number is less than 0",
+        "code": [
+          "def less_than_0(n):",
+          "    return n < 0"
+        ]
+      },
+      {
+        "question": "Check if a number is a multiple of 4",
+        "code": [
+          "def multiple_of_4(n):",
+          "    return n % 4 == 0"
+        ]
+      },
+      {
+        "question": "Return square root of a number",
+        "code": [
+          "def square_root(n):",
+          "    return n ** 0.5"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "def double(n):",
+          "    return n * 2"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "def triple(n):",
+          "    return n * 3"
+        ]
+      },
+      {
+        "question": "Check if a number is between 10 and 20",
+        "code": [
+          "def between_10_and_20(n):",
+          "    return 10 <= n <= 20"
+        ]
       }
     ],
-    "level7": [
+    "javascript":[
       {
-        "question": "fibonacci series using recursion",
+        "question": "Check if a number is even",
         "code": [
-          "def fibonacci(n):",
-          "    if n <= 1:",
-          "        return n",
-          "    return fibonacci(n-1) + fibonacci(n-2)"
+          "function isEven(n) {",
+          "    return n % 2 === 0;",
+          "}"
         ]
       },
       {
-        "question": "factorial using recursion",
+        "question": "Add two numbers",
         "code": [
-          "def factorial(n):",
-          "    if n == 0:",
-          "        return 1",
-          "    return n * factorial(n-1)"
+          "function add(a, b) {",
+          "    return a + b;",
+          "}"
         ]
       },
       {
-        "question": "generate all permutations of a string",
+        "question": "Subtract two numbers",
         "code": [
-          "from itertools import permutations",
-          "def all_permutations(s):",
-          "    return [''.join(p) for p in permutations(s)]"
+          "function subtract(a, b) {",
+          "    return a - b;",
+          "}"
         ]
-      }
-    ],
-    "level8": [
-      {
-        "question": "sort a list of dictionaries by key",
-        "code": ["def sort_by_key(lst, key):", "    return sorted(lst, key=lambda x: x[key])"]
       },
       {
-        "question": "merge two dictionaries",
-        "code": ["def merge_dicts(d1, d2):", "    return {**d1, **d2}"]
-      },
-      {
-        "question": "read a file and count word frequency",
+        "question": "Multiply two numbers",
         "code": [
-          "def word_frequency_file(filename):",
-          "    freq = {}",
-          "    with open(filename) as f:",
-          "        for line in f:",
-          "            for word in line.split():",
-          "                freq[word] = freq.get(word, 0) + 1",
-          "    return freq"
+          "function multiply(a, b) {",
+          "    return a * b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "function divide(a, b) {",
+          "    return a / b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is positive",
+        "code": [
+          "function isPositive(n) {",
+          "    return n > 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is negative",
+        "code": [
+          "function isNegative(n) {",
+          "    return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "function square(n) {",
+          "    return n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "function cube(n) {",
+          "    return n * n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "function maximum(a, b) {",
+          "    return a > b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "function minimum(a, b) {",
+          "    return a < b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate absolute value",
+        "code": [
+          "function absolute(n) {",
+          "    return Math.abs(n);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is divisible by 3",
+        "code": [
+          "function divisibleBy3(n) {",
+          "    return n % 3 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is divisible by 5",
+        "code": [
+          "function divisibleBy5(n) {",
+          "    return n % 5 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is divisible by 10",
+        "code": [
+          "function divisibleBy10(n) {",
+          "    return n % 10 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "function isOdd(n) {",
+          "    return n % 2 !== 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "function remainder(a, b) {",
+          "    return a % b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate sum of three numbers",
+        "code": [
+          "function sumThree(a, b, c) {",
+          "    return a + b + c;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate product of three numbers",
+        "code": [
+          "function productThree(a, b, c) {",
+          "    return a * b * c;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is a multiple of 7",
+        "code": [
+          "function multipleOf7(n) {",
+          "    return n % 7 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is divisible by both 2 and 3",
+        "code": [
+          "function divisibleBy2And3(n) {",
+          "    return n % 2 === 0 && n % 3 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "function celsiusToFahrenheit(c) {",
+          "    return (c * 9/5) + 32;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "function fahrenheitToCelsius(f) {",
+          "    return (f - 32) * 5/9;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is greater than 100",
+        "code": [
+          "function greaterThan100(n) {",
+          "    return n > 100;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is less than 0",
+        "code": [
+          "function lessThan0(n) {",
+          "    return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is a multiple of 4",
+        "code": [
+          "function multipleOf4(n) {",
+          "    return n % 4 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return square root of a number",
+        "code": [
+          "function squareRoot(n) {",
+          "    return Math.sqrt(n);",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "function double(n) {",
+          "    return n * 2;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "function triple(n) {",
+          "    return n * 3;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is between 10 and 20",
+        "code": [
+          "function between10And20(n) {",
+          "    return n >= 10 && n <= 20;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is divisible by 6",
+        "code": [
+          "function divisibleBy6(n) {",
+          "    return n % 6 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is divisible by 8",
+        "code": [
+          "function divisibleBy8(n) {",
+          "    return n % 8 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is divisible by 9",
+        "code": [
+          "function divisibleBy9(n) {",
+          "    return n % 9 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return half of a number",
+        "code": [
+          "function half(n) {",
+          "    return n / 2;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return sum of an array",
+        "code": [
+          "function sumArray(arr) {",
+          "    return arr.reduce((a, b) => a + b, 0);",
+          "}"
+        ]
+      },
+      {
+        "question": "Return product of an array",
+        "code": [
+          "function productArray(arr) {",
+          "    return arr.reduce((a, b) => a * b, 1);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if an array contains a number",
+        "code": [
+          "function contains(arr, n) {",
+          "    return arr.includes(n);",
+          "}"
+        ]
+      },
+      {
+        "question": "Return length of an array",
+        "code": [
+          "function arrayLength(arr) {",
+          "    return arr.length;",
+          "}"
         ]
       }
     ]
   },
-  "javascript": {
-    "level1": [
+
+  "intermediate": {
+    "python": [
       {
-        "question": "define addition in javascript",
-        "code": ["function add(a, b) {", "    return a + b;", "}"]
-      },
-      {
-        "question": "define subtraction in javascript",
-        "code": ["function subtract(a, b) {", "    return a - b;", "}"]
-      },
-      {
-        "question": "define multiplication in javascript",
-        "code": ["function multiply(a, b) {", "    return a * b;", "}"]
-      }
-    ],
-    "level2": [
-      {
-        "question": "define division in javascript",
-        "code": ["function divide(a, b) {", "    return a / b;", "}"]
-      },
-      {
-        "question": "calculate the square of a number",
-        "code": ["function square(n) {", "    return n * n;", "}"]
-      },
-      {
-        "question": "check if a number is even",
-        "code": ["function isEven(n) {", "    return n % 2 === 0;", "}"]
-      }
-    ],
-    "level3": [
-      {
-        "question": "find the maximum of two numbers",
-        "code": ["function max(a, b) {", "    return a > b ? a : b;", "}"]
-      },
-      {
-        "question": "find the minimum of two numbers",
-        "code": ["function min(a, b) {", "    return a < b ? a : b;", "}"]
-      },
-      {
-        "question": "calculate absolute value of a number",
-        "code": ["function absolute(n) {", "    return Math.abs(n);", "}"]
-      }
-    ],
-    "level4": [
-      {
-        "question": "reverse a string",
-        "code": ["function reverseString(s) {", "    return s.split('').reverse().join('');", "}"]
-      },
-      {
-        "question": "concatenate two strings",
-        "code": ["function concatStrings(s1, s2) {", "    return s1 + s2;", "}"]
-      },
-      {
-        "question": "check if a string is a palindrome",
-        "code": ["function isPalindrome(s) {", "    return s === s.split('').reverse().join('');", "}"]
-      }
-    ],
-    "level5": [
-      {
-        "question": "find the maximum in an array",
-        "code": ["function maxInArray(arr) {", "    return Math.max(...arr);", "}"]
-      },
-      {
-        "question": "calculate the sum of an array",
-        "code": ["function sumArray(arr) {", "    return arr.reduce((a,b) => a+b, 0);", "}"]
-      },
-      {
-        "question": "sort an array in ascending order",
-        "code": ["function sortArray(arr) {", "    return arr.sort((a,b) => a-b);", "}"]
-      }
-    ],
-    "level6": [
-      {
-        "question": "remove duplicates from an array",
-        "code": ["function removeDuplicates(arr) {", "    return [...new Set(arr)];", "}"]
-      },
-      {
-        "question": "count word frequency in a string",
+        "question": "Reverse a string",
         "code": [
-          "function wordFrequency(str) {",
-          "    let freq = {};",
-          "    str.split(' ').forEach(word => {",
-          "        freq[word] = (freq[word] || 0) + 1;",
-          "    });",
-          "    return freq;",
+          "def reverse_string(s):",
+          "    return s[::-1]"
+        ]
+      },
+      {
+        "question": "Check if a string is a palindrome",
+        "code": [
+          "def is_palindrome(s):",
+          "    return s == s[::-1]"
+        ]
+      }
+    ],
+    "javascript": [
+      {
+        "question": "Reverse a string",
+        "code": [
+          "function reverseString(s) {",
+          "    return s.split('').reverse().join('');",
           "}"
         ]
       },
       {
-        "question": "flatten a nested array",
-        "code": ["function flatten(arr) {", "    return arr.flat(Infinity);", "}"]
-      }
-    ],
-    "level7": [
-      {
-        "question": "fibonacci series using recursion",
+        "question": "Check if a string is a palindrome",
         "code": [
-          "function fibonacci(n) {",
-          "    if(n <= 1) return n;",
-          "    return fibonacci(n-1) + fibonacci(n-2);",
+          "function isPalindrome(s) {",
+          "    return s === s.split('').reverse().join('');",
           "}"
+        ]
+      }
+    ]
+  },
+
+  "advanced": {
+    "python": [
+      {
+        "question": "Calculate factorial using recursion",
+        "code": [
+          "def factorial(n):",
+          "    if n == 0:",
+          "        return 1",
+          "    return n * factorial(n - 1)"
         ]
       },
       {
-        "question": "factorial using recursion",
+        "question": "Generate Fibonacci number using recursion",
+        "code": [
+          "def fibonacci(n):",
+          "    if n <= 1:",
+          "        return n",
+          "    return fibonacci(n - 1) + fibonacci(n - 2)"
+        ]
+      }
+    ],
+    "javascript": [
+      {
+        "question": "Calculate factorial using recursion",
         "code": [
           "function factorial(n) {",
-          "    if(n === 0) return 1;",
-          "    return n * factorial(n-1);",
+          "    if (n === 0) return 1;",
+          "    return n * factorial(n - 1);",
           "}"
         ]
       },
       {
-        "question": "generate all permutations of a string",
+        "question": "Generate Fibonacci number using recursion",
         "code": [
-          "function allPermutations(str) {",
-          "    if(str.length <= 1) return [str];",
-          "    let result = [];",
-          "    for(let i = 0; i < str.length; i++) {",
-          "        let rest = allPermutations(str.slice(0,i) + str.slice(i+1));",
-          "        rest.forEach(r => result.push(str[i] + r));",
-          "    }",
-          "    return result;",
-          "}"
-        ]
-      }
-    ],
-    "level8": [
-      {
-        "question": "sort an array of objects by key",
-        "code": [
-          "function sortByKey(arr, key) {",
-          "    return arr.sort((a,b) => (a[key] > b[key] ? 1 : -1));",
-          "}"
-        ]
-      },
-      {
-        "question": "merge two objects",
-        "code": ["function mergeObjects(obj1, obj2) {", "    return {...obj1, ...obj2};", "}"]
-      },
-      {
-        "question": "read a file and count word frequency (Node.js)",
-        "code": [
-          "const fs = require('fs');",
-          "function wordFrequencyFile(filename) {",
-          "    let freq = {};",
-          "    const data = fs.readFileSync(filename, 'utf-8');",
-          "    data.split(/\\s+/).forEach(word => {",
-          "        freq[word] = (freq[word] || 0) + 1;",
-          "    });",
-          "    return freq;",
+          "function fibonacci(n) {",
+          "    if (n <= 1) return n;",
+          "    return fibonacci(n - 1) + fibonacci(n - 2);",
           "}"
         ]
       }
     ]
   }
 }
-
