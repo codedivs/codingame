@@ -9,6 +9,10 @@ div {
 	border: 1px solid black;
 	width: 100%;
 }
+#options {
+	display: flex;
+	flex-direction: row;
+}
 #question_holder {
 	height: 20%;
 }
