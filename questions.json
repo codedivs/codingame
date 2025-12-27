@@ -1,5 +1,375 @@
 {
   "beginner": {
+    "java": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "static boolean isEven(int n) {",
+          "    return n % 2 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "static boolean isOdd(int n) {",
+          "    return n % 2 != 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "static int add(int a, int b) {",
+          "    return a + b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "static int subtract(int a, int b) {",
+          "    return a - b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "static int multiply(int a, int b) {",
+          "    return a * b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "static int divide(int a, int b) {",
+          "    return a / b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "static int max(int a, int b) {",
+          "    return a > b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "static int min(int a, int b) {",
+          "    return a < b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is positive",
+        "code": [
+          "static boolean isPositive(int n) {",
+          "    return n > 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is negative",
+        "code": [
+          "static boolean isNegative(int n) {",
+          "    return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "static int square(int n) {",
+          "    return n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "static int cube(int n) {",
+          "    return n * n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate absolute value",
+        "code": [
+          "static int absolute(int n) {",
+          "    return Math.abs(n);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "static boolean divisibleBy3(int n) {",
+          "    return n % 3 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "static boolean divisibleBy5(int n) {",
+          "    return n % 5 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "static boolean divisibleBy10(int n) {",
+          "    return n % 10 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "static boolean multipleOf7(int n) {",
+          "    return n % 7 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "static boolean between10And20(int n) {",
+          "    return n >= 10 && n <= 20;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "static int remainder(int a, int b) {",
+          "    return a % b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate sum of three numbers",
+        "code": [
+          "static int sumThree(int a, int b, int c) {",
+          "    return a + b + c;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate product of three numbers",
+        "code": [
+          "static int productThree(int a, int b, int c) {",
+          "    return a * b * c;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "static boolean greaterThan100(int n) {",
+          "    return n > 100;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "static boolean lessThanZero(int n) {",
+          "    return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "static double celsiusToFahrenheit(double c) {",
+          "    return (c * 9 / 5) + 32;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "static double fahrenheitToCelsius(double f) {",
+          "    return (f - 32) * 5 / 9;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "static int doubleValue(int n) {",
+          "    return n * 2;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "static int tripleValue(int n) {",
+          "    return n * 3;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "static boolean divisibleBy2And3(int n) {",
+          "    return n % 2 == 0 && n % 3 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return square root of a number",
+        "code": [
+          "static double squareRoot(double n) {",
+          "    return Math.sqrt(n);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "static boolean isZero(int n) {",
+          "    return n == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "static int increment(int n) {",
+          "    return n + 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "static int decrement(int n) {",
+          "    return n - 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "static boolean multipleOf4(int n) {",
+          "    return n % 4 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "static boolean multipleOf9(int n) {",
+          "    return n % 9 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "static double average(int a, int b) {",
+          "    return (a + b) / 2.0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return larger of two numbers",
+        "code": [
+          "static int larger(int a, int b) {",
+          "    return Math.max(a, b);",
+          "}"
+        ]
+      },
+      {
+        "question": "Return smaller of two numbers",
+        "code": [
+          "static int smaller(int a, int b) {",
+          "    return Math.min(a, b);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "static boolean divisibleBy8(int n) {",
+          "    return n % 8 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "static int difference(int a, int b) {",
+          "    return Math.abs(a - b);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is a multiple of 6",
+        "code": [
+          "static boolean multipleOf6(int n) {",
+          "    return n % 6 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is a multiple of 12",
+        "code": [
+          "static boolean multipleOf12(int n) {",
+          "    return n % 12 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "static int minutesToSeconds(int m) {",
+          "    return m * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "static int hoursToMinutes(int h) {",
+          "    return h * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "static int lastDigit(int n) {",
+          "    return Math.abs(n % 10);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is a two-digit number",
+        "code": [
+          "static boolean isTwoDigit(int n) {",
+          "    return n >= 10 && n <= 99;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is a three-digit number",
+        "code": [
+          "static boolean isThreeDigit(int n) {",
+          "    return n >= 100 && n <= 999;",
+          "}"
+        ]
+      }
+    ],
       "python": [
       {
         "question": "Check if a number is even",
