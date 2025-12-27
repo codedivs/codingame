@@ -1,5 +1,4170 @@
 {
   "beginner": {
+    "r": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "is_even <- function(n) {",
+          "  n %% 2 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "is_odd <- function(n) {",
+          "  n %% 2 != 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "add <- function(a, b) {",
+          "  a + b",
+          "}"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "subtract <- function(a, b) {",
+          "  a - b",
+          "}"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "multiply <- function(a, b) {",
+          "  a * b",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "divide <- function(a, b) {",
+          "  a / b",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "remainder <- function(a, b) {",
+          "  a %% b",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "maximum <- function(a, b) {",
+          "  if (a > b) a else b",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "minimum <- function(a, b) {",
+          "  if (a < b) a else b",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "is_positive <- function(n) {",
+          "  n > 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "is_negative <- function(n) {",
+          "  n < 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "is_zero <- function(n) {",
+          "  n == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "square <- function(n) {",
+          "  n * n",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "cube <- function(n) {",
+          "  n * n * n",
+          "}"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "absolute <- function(n) {",
+          "  abs(n)",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "divisible_by_3 <- function(n) {",
+          "  n %% 3 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "divisible_by_5 <- function(n) {",
+          "  n %% 5 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "divisible_by_10 <- function(n) {",
+          "  n %% 10 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "multiple_of_7 <- function(n) {",
+          "  n %% 7 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "divisible_by_2_and_3 <- function(n) {",
+          "  n %% 2 == 0 & n %% 3 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "between_10_and_20 <- function(n) {",
+          "  n >= 10 & n <= 20",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "double_value <- function(n) {",
+          "  n * 2",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "triple_value <- function(n) {",
+          "  n * 3",
+          "}"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "increment <- function(n) {",
+          "  n + 1",
+          "}"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "decrement <- function(n) {",
+          "  n - 1",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "celsius_to_fahrenheit <- function(c) {",
+          "  (c * 9/5) + 32",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "fahrenheit_to_celsius <- function(f) {",
+          "  (f - 32) * 5/9",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "minutes_to_seconds <- function(m) {",
+          "  m * 60",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "hours_to_minutes <- function(h) {",
+          "  h * 60",
+          "}"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "average <- function(a, b) {",
+          "  (a + b)/2",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "multiple_of_4 <- function(n) {",
+          "  n %% 4 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "multiple_of_9 <- function(n) {",
+          "  n %% 9 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "divisible_by_8 <- function(n) {",
+          "  n %% 8 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "greater_than_100 <- function(n) {",
+          "  n > 100",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "less_than_0 <- function(n) {",
+          "  n < 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "last_digit <- function(n) {",
+          "  abs(n) %% 10",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "is_two_digit <- function(n) {",
+          "  n >= 10 & n <= 99",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "is_three_digit <- function(n) {",
+          "  n >= 100 & n <= 999",
+          "}"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "difference <- function(a, b) {",
+          "  abs(a - b)",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "multiple_of_6 <- function(n) {",
+          "  n %% 6 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "multiple_of_12 <- function(n) {",
+          "  n %% 12 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "days_to_hours <- function(d) {",
+          "  d * 24",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "weeks_to_days <- function(w) {",
+          "  w * 7",
+          "}"
+        ]
+      }
+    ],
+    "dart": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "bool isEven(int n) {",
+          "  return n % 2 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "bool isOdd(int n) {",
+          "  return n % 2 != 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "int add(int a, int b) {",
+          "  return a + b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "int subtract(int a, int b) {",
+          "  return a - b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "int multiply(int a, int b) {",
+          "  return a * b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "double divide(int a, int b) {",
+          "  return a / b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "int remainder(int a, int b) {",
+          "  return a % b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "int maximum(int a, int b) {",
+          "  return a > b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "int minimum(int a, int b) {",
+          "  return a < b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "bool isPositive(int n) {",
+          "  return n > 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "bool isNegative(int n) {",
+          "  return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "bool isZero(int n) {",
+          "  return n == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "int square(int n) {",
+          "  return n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "int cube(int n) {",
+          "  return n * n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "int absolute(int n) {",
+          "  return n.abs();",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "bool divisibleBy3(int n) {",
+          "  return n % 3 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "bool divisibleBy5(int n) {",
+          "  return n % 5 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "bool divisibleBy10(int n) {",
+          "  return n % 10 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "bool multipleOf7(int n) {",
+          "  return n % 7 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "bool divisibleBy2And3(int n) {",
+          "  return n % 2 == 0 && n % 3 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "bool between10And20(int n) {",
+          "  return n >= 10 && n <= 20;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "int doubleValue(int n) {",
+          "  return n * 2;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "int tripleValue(int n) {",
+          "  return n * 3;",
+          "}"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "int increment(int n) {",
+          "  return n + 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "int decrement(int n) {",
+          "  return n - 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "double celsiusToFahrenheit(double c) {",
+          "  return (c * 9 / 5) + 32;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "double fahrenheitToCelsius(double f) {",
+          "  return (f - 32) * 5 / 9;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "int minutesToSeconds(int m) {",
+          "  return m * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "int hoursToMinutes(int h) {",
+          "  return h * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "double average(int a, int b) {",
+          "  return (a + b) / 2;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "bool multipleOf4(int n) {",
+          "  return n % 4 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "bool multipleOf9(int n) {",
+          "  return n % 9 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "bool divisibleBy8(int n) {",
+          "  return n % 8 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "bool greaterThan100(int n) {",
+          "  return n > 100;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "bool lessThan0(int n) {",
+          "  return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "int lastDigit(int n) {",
+          "  return n.abs() % 10;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "bool isTwoDigit(int n) {",
+          "  return n >= 10 && n <= 99;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "bool isThreeDigit(int n) {",
+          "  return n >= 100 && n <= 999;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "int difference(int a, int b) {",
+          "  return (a - b).abs();",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "bool multipleOf6(int n) {",
+          "  return n % 6 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "bool multipleOf12(int n) {",
+          "  return n % 12 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "int daysToHours(int d) {",
+          "  return d * 24;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "int weeksToDays(int w) {",
+          "  return w * 7;",
+          "}"
+        ]
+      }
+    ],
+    "typescript": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "function isEven(n: number): boolean {",
+          "    return n % 2 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "function isOdd(n: number): boolean {",
+          "    return n % 2 !== 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "function add(a: number, b: number): number {",
+          "    return a + b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "function subtract(a: number, b: number): number {",
+          "    return a - b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "function multiply(a: number, b: number): number {",
+          "    return a * b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "function divide(a: number, b: number): number {",
+          "    return a / b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "function remainder(a: number, b: number): number {",
+          "    return a % b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "function maximum(a: number, b: number): number {",
+          "    return a > b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "function minimum(a: number, b: number): number {",
+          "    return a < b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "function isPositive(n: number): boolean {",
+          "    return n > 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "function isNegative(n: number): boolean {",
+          "    return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "function isZero(n: number): boolean {",
+          "    return n === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "function square(n: number): number {",
+          "    return n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "function cube(n: number): number {",
+          "    return n * n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "function absolute(n: number): number {",
+          "    return Math.abs(n);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "function divisibleBy3(n: number): boolean {",
+          "    return n % 3 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "function divisibleBy5(n: number): boolean {",
+          "    return n % 5 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "function divisibleBy10(n: number): boolean {",
+          "    return n % 10 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "function multipleOf7(n: number): boolean {",
+          "    return n % 7 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "function divisibleBy2And3(n: number): boolean {",
+          "    return n % 2 === 0 && n % 3 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "function between10And20(n: number): boolean {",
+          "    return n >= 10 && n <= 20;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "function doubleValue(n: number): number {",
+          "    return n * 2;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "function tripleValue(n: number): number {",
+          "    return n * 3;",
+          "}"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "function increment(n: number): number {",
+          "    return n + 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "function decrement(n: number): number {",
+          "    return n - 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "function celsiusToFahrenheit(c: number): number {",
+          "    return (c * 9 / 5) + 32;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "function fahrenheitToCelsius(f: number): number {",
+          "    return (f - 32) * 5 / 9;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "function minutesToSeconds(m: number): number {",
+          "    return m * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "function hoursToMinutes(h: number): number {",
+          "    return h * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "function average(a: number, b: number): number {",
+          "    return (a + b) / 2;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "function multipleOf4(n: number): boolean {",
+          "    return n % 4 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "function multipleOf9(n: number): boolean {",
+          "    return n % 9 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "function divisibleBy8(n: number): boolean {",
+          "    return n % 8 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "function greaterThan100(n: number): boolean {",
+          "    return n > 100;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "function lessThan0(n: number): boolean {",
+          "    return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "function lastDigit(n: number): number {",
+          "    return Math.abs(n % 10);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "function isTwoDigit(n: number): boolean {",
+          "    return n >= 10 && n <= 99;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "function isThreeDigit(n: number): boolean {",
+          "    return n >= 100 && n <= 999;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "function difference(a: number, b: number): number {",
+          "    return Math.abs(a - b);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "function multipleOf6(n: number): boolean {",
+          "    return n % 6 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "function multipleOf12(n: number): boolean {",
+          "    return n % 12 === 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "function daysToHours(d: number): number {",
+          "    return d * 24;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "function weeksToDays(w: number): number {",
+          "    return w * 7;",
+          "}"
+        ]
+      }
+    ],
+    "rust": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "fn is_even(n: i32) -> bool {",
+          "    n % 2 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "fn is_odd(n: i32) -> bool {",
+          "    n % 2 != 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "fn add(a: i32, b: i32) -> i32 {",
+          "    a + b",
+          "}"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "fn subtract(a: i32, b: i32) -> i32 {",
+          "    a - b",
+          "}"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "fn multiply(a: i32, b: i32) -> i32 {",
+          "    a * b",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "fn divide(a: i32, b: i32) -> i32 {",
+          "    a / b",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "fn remainder(a: i32, b: i32) -> i32 {",
+          "    a % b",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "fn maximum(a: i32, b: i32) -> i32 {",
+          "    if a > b { a } else { b }",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "fn minimum(a: i32, b: i32) -> i32 {",
+          "    if a < b { a } else { b }",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "fn is_positive(n: i32) -> bool {",
+          "    n > 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "fn is_negative(n: i32) -> bool {",
+          "    n < 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "fn is_zero(n: i32) -> bool {",
+          "    n == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "fn square(n: i32) -> i32 {",
+          "    n * n",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "fn cube(n: i32) -> i32 {",
+          "    n * n * n",
+          "}"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "fn absolute(n: i32) -> i32 {",
+          "    n.abs()",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "fn divisible_by_3(n: i32) -> bool {",
+          "    n % 3 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "fn divisible_by_5(n: i32) -> bool {",
+          "    n % 5 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "fn divisible_by_10(n: i32) -> bool {",
+          "    n % 10 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "fn multiple_of_7(n: i32) -> bool {",
+          "    n % 7 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "fn divisible_by_2_and_3(n: i32) -> bool {",
+          "    n % 2 == 0 && n % 3 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "fn between_10_and_20(n: i32) -> bool {",
+          "    n >= 10 && n <= 20",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "fn double_value(n: i32) -> i32 {",
+          "    n * 2",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "fn triple_value(n: i32) -> i32 {",
+          "    n * 3",
+          "}"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "fn increment(n: i32) -> i32 {",
+          "    n + 1",
+          "}"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "fn decrement(n: i32) -> i32 {",
+          "    n - 1",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "fn celsius_to_fahrenheit(c: f64) -> f64 {",
+          "    (c * 9.0 / 5.0) + 32.0",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "fn fahrenheit_to_celsius(f: f64) -> f64 {",
+          "    (f - 32.0) * 5.0 / 9.0",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "fn minutes_to_seconds(m: i32) -> i32 {",
+          "    m * 60",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "fn hours_to_minutes(h: i32) -> i32 {",
+          "    h * 60",
+          "}"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "fn average(a: i32, b: i32) -> f64 {",
+          "    (a + b) as f64 / 2.0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "fn multiple_of_4(n: i32) -> bool {",
+          "    n % 4 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "fn multiple_of_9(n: i32) -> bool {",
+          "    n % 9 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "fn divisible_by_8(n: i32) -> bool {",
+          "    n % 8 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "fn greater_than_100(n: i32) -> bool {",
+          "    n > 100",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "fn less_than_0(n: i32) -> bool {",
+          "    n < 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "fn last_digit(n: i32) -> i32 {",
+          "    n.abs() % 10",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "fn is_two_digit(n: i32) -> bool {",
+          "    n >= 10 && n <= 99",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "fn is_three_digit(n: i32) -> bool {",
+          "    n >= 100 && n <= 999",
+          "}"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "fn difference(a: i32, b: i32) -> i32 {",
+          "    (a - b).abs()",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "fn multiple_of_6(n: i32) -> bool {",
+          "    n % 6 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "fn multiple_of_12(n: i32) -> bool {",
+          "    n % 12 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "fn days_to_hours(d: i32) -> i32 {",
+          "    d * 24",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "fn weeks_to_days(w: i32) -> i32 {",
+          "    w * 7",
+          "}"
+        ]
+      }
+    ],
+    "kotlin": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "fun isEven(n: Int): Boolean {",
+          "    return n % 2 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "fun isOdd(n: Int): Boolean {",
+          "    return n % 2 != 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "fun add(a: Int, b: Int): Int {",
+          "    return a + b",
+          "}"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "fun subtract(a: Int, b: Int): Int {",
+          "    return a - b",
+          "}"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "fun multiply(a: Int, b: Int): Int {",
+          "    return a * b",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "fun divide(a: Int, b: Int): Int {",
+          "    return a / b",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "fun remainder(a: Int, b: Int): Int {",
+          "    return a % b",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "fun max(a: Int, b: Int): Int {",
+          "    return if(a > b) a else b",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "fun min(a: Int, b: Int): Int {",
+          "    return if(a < b) a else b",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "fun isPositive(n: Int): Boolean {",
+          "    return n > 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "fun isNegative(n: Int): Boolean {",
+          "    return n < 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "fun isZero(n: Int): Boolean {",
+          "    return n == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "fun square(n: Int): Int {",
+          "    return n * n",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "fun cube(n: Int): Int {",
+          "    return n * n * n",
+          "}"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "fun absolute(n: Int): Int {",
+          "    return kotlin.math.abs(n)",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "fun divisibleBy3(n: Int): Boolean {",
+          "    return n % 3 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "fun divisibleBy5(n: Int): Boolean {",
+          "    return n % 5 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "fun divisibleBy10(n: Int): Boolean {",
+          "    return n % 10 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "fun multipleOf7(n: Int): Boolean {",
+          "    return n % 7 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "fun divisibleBy2And3(n: Int): Boolean {",
+          "    return n % 2 == 0 && n % 3 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "fun between10And20(n: Int): Boolean {",
+          "    return n in 10..20",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "fun doubleValue(n: Int): Int {",
+          "    return n * 2",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "fun tripleValue(n: Int): Int {",
+          "    return n * 3",
+          "}"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "fun increment(n: Int): Int {",
+          "    return n + 1",
+          "}"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "fun decrement(n: Int): Int {",
+          "    return n - 1",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "fun celsiusToFahrenheit(c: Double): Double {",
+          "    return (c * 9 / 5) + 32",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "fun fahrenheitToCelsius(f: Double): Double {",
+          "    return (f - 32) * 5 / 9",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "fun minutesToSeconds(m: Int): Int {",
+          "    return m * 60",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "fun hoursToMinutes(h: Int): Int {",
+          "    return h * 60",
+          "}"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "fun average(a: Int, b: Int): Double {",
+          "    return (a + b) / 2.0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "fun multipleOf4(n: Int): Boolean {",
+          "    return n % 4 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "fun multipleOf9(n: Int): Boolean {",
+          "    return n % 9 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "fun divisibleBy8(n: Int): Boolean {",
+          "    return n % 8 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "fun greaterThan100(n: Int): Boolean {",
+          "    return n > 100",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "fun lessThan0(n: Int): Boolean {",
+          "    return n < 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "fun lastDigit(n: Int): Int {",
+          "    return kotlin.math.abs(n % 10)",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "fun isTwoDigit(n: Int): Boolean {",
+          "    return n in 10..99",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "fun isThreeDigit(n: Int): Boolean {",
+          "    return n in 100..999",
+          "}"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "fun difference(a: Int, b: Int): Int {",
+          "    return kotlin.math.abs(a - b)",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "fun multipleOf6(n: Int): Boolean {",
+          "    return n % 6 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "fun multipleOf12(n: Int): Boolean {",
+          "    return n % 12 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "fun daysToHours(d: Int): Int {",
+          "    return d * 24",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "fun weeksToDays(w: Int): Int {",
+          "    return w * 7",
+          "}"
+        ]
+      }
+    ],
+    "swift": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "func isEven(_ n: Int) -> Bool {",
+          "    return n % 2 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "func isOdd(_ n: Int) -> Bool {",
+          "    return n % 2 != 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "func add(_ a: Int, _ b: Int) -> Int {",
+          "    return a + b",
+          "}"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "func subtract(_ a: Int, _ b: Int) -> Int {",
+          "    return a - b",
+          "}"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "func multiply(_ a: Int, _ b: Int) -> Int {",
+          "    return a * b",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "func divide(_ a: Int, _ b: Int) -> Int {",
+          "    return a / b",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "func remainder(_ a: Int, _ b: Int) -> Int {",
+          "    return a % b",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "func maximum(_ a: Int, _ b: Int) -> Int {",
+          "    return a > b ? a : b",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "func minimum(_ a: Int, _ b: Int) -> Int {",
+          "    return a < b ? a : b",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "func isPositive(_ n: Int) -> Bool {",
+          "    return n > 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "func isNegative(_ n: Int) -> Bool {",
+          "    return n < 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "func isZero(_ n: Int) -> Bool {",
+          "    return n == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "func square(_ n: Int) -> Int {",
+          "    return n * n",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "func cube(_ n: Int) -> Int {",
+          "    return n * n * n",
+          "}"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "func absolute(_ n: Int) -> Int {",
+          "    return abs(n)",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "func divisibleBy3(_ n: Int) -> Bool {",
+          "    return n % 3 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "func divisibleBy5(_ n: Int) -> Bool {",
+          "    return n % 5 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "func divisibleBy10(_ n: Int) -> Bool {",
+          "    return n % 10 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "func multipleOf7(_ n: Int) -> Bool {",
+          "    return n % 7 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "func divisibleBy2And3(_ n: Int) -> Bool {",
+          "    return n % 2 == 0 && n % 3 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "func between10And20(_ n: Int) -> Bool {",
+          "    return n >= 10 && n <= 20",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "func doubleValue(_ n: Int) -> Int {",
+          "    return n * 2",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "func tripleValue(_ n: Int) -> Int {",
+          "    return n * 3",
+          "}"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "func increment(_ n: Int) -> Int {",
+          "    return n + 1",
+          "}"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "func decrement(_ n: Int) -> Int {",
+          "    return n - 1",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "func celsiusToFahrenheit(_ c: Double) -> Double {",
+          "    return (c * 9 / 5) + 32",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "func fahrenheitToCelsius(_ f: Double) -> Double {",
+          "    return (f - 32) * 5 / 9",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "func minutesToSeconds(_ m: Int) -> Int {",
+          "    return m * 60",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "func hoursToMinutes(_ h: Int) -> Int {",
+          "    return h * 60",
+          "}"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "func average(_ a: Int, _ b: Int) -> Double {",
+          "    return Double(a + b) / 2.0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "func multipleOf4(_ n: Int) -> Bool {",
+          "    return n % 4 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "func multipleOf9(_ n: Int) -> Bool {",
+          "    return n % 9 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "func divisibleBy8(_ n: Int) -> Bool {",
+          "    return n % 8 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "func greaterThan100(_ n: Int) -> Bool {",
+          "    return n > 100",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "func lessThan0(_ n: Int) -> Bool {",
+          "    return n < 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "func lastDigit(_ n: Int) -> Int {",
+          "    return abs(n % 10)",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "func isTwoDigit(_ n: Int) -> Bool {",
+          "    return n >= 10 && n <= 99",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "func isThreeDigit(_ n: Int) -> Bool {",
+          "    return n >= 100 && n <= 999",
+          "}"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "func difference(_ a: Int, _ b: Int) -> Int {",
+          "    return abs(a - b)",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "func multipleOf6(_ n: Int) -> Bool {",
+          "    return n % 6 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "func multipleOf12(_ n: Int) -> Bool {",
+          "    return n % 12 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "func daysToHours(_ d: Int) -> Int {",
+          "    return d * 24",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "func weeksToDays(_ w: Int) -> Int {",
+          "    return w * 7",
+          "}"
+        ]
+      }
+    ],
+    "go": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "func isEven(n int) bool {",
+          "    return n % 2 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "func isOdd(n int) bool {",
+          "    return n % 2 != 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "func add(a, b int) int {",
+          "    return a + b",
+          "}"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "func subtract(a, b int) int {",
+          "    return a - b",
+          "}"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "func multiply(a, b int) int {",
+          "    return a * b",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "func divide(a, b int) int {",
+          "    return a / b",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "func remainder(a, b int) int {",
+          "    return a % b",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "func max(a, b int) int {",
+          "    if a > b {",
+          "        return a",
+          "    }",
+          "    return b",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "func min(a, b int) int {",
+          "    if a < b {",
+          "        return a",
+          "    }",
+          "    return b",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "func isPositive(n int) bool {",
+          "    return n > 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "func isNegative(n int) bool {",
+          "    return n < 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "func isZero(n int) bool {",
+          "    return n == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "func square(n int) int {",
+          "    return n * n",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "func cube(n int) int {",
+          "    return n * n * n",
+          "}"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "import \"math\"",
+          "func absolute(n int) int {",
+          "    return int(math.Abs(float64(n)))",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "func divisibleBy3(n int) bool {",
+          "    return n % 3 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "func divisibleBy5(n int) bool {",
+          "    return n % 5 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "func divisibleBy10(n int) bool {",
+          "    return n % 10 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "func multipleOf7(n int) bool {",
+          "    return n % 7 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "func divisibleBy2And3(n int) bool {",
+          "    return n % 2 == 0 && n % 3 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "func between10And20(n int) bool {",
+          "    return n >= 10 && n <= 20",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "func doubleValue(n int) int {",
+          "    return n * 2",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "func tripleValue(n int) int {",
+          "    return n * 3",
+          "}"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "func increment(n int) int {",
+          "    return n + 1",
+          "}"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "func decrement(n int) int {",
+          "    return n - 1",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "func celsiusToFahrenheit(c float64) float64 {",
+          "    return (c * 9 / 5) + 32",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "func fahrenheitToCelsius(f float64) float64 {",
+          "    return (f - 32) * 5 / 9",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "func minutesToSeconds(m int) int {",
+          "    return m * 60",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "func hoursToMinutes(h int) int {",
+          "    return h * 60",
+          "}"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "func average(a, b int) float64 {",
+          "    return float64(a + b) / 2.0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "func multipleOf4(n int) bool {",
+          "    return n % 4 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "func multipleOf9(n int) bool {",
+          "    return n % 9 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "func divisibleBy8(n int) bool {",
+          "    return n % 8 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "func greaterThan100(n int) bool {",
+          "    return n > 100",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "func lessThanZero(n int) bool {",
+          "    return n < 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "func lastDigit(n int) int {",
+          "    if n < 0 {",
+          "        n = -n",
+          "    }",
+          "    return n % 10",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "func twoDigit(n int) bool {",
+          "    return n >= 10 && n <= 99",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "func threeDigit(n int) bool {",
+          "    return n >= 100 && n <= 999",
+          "}"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "func difference(a, b int) int {",
+          "    if a > b {",
+          "        return a - b",
+          "    }",
+          "    return b - a",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "func multipleOf6(n int) bool {",
+          "    return n % 6 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "func multipleOf12(n int) bool {",
+          "    return n % 12 == 0",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "func daysToHours(d int) int {",
+          "    return d * 24",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "func weeksToDays(w int) int {",
+          "    return w * 7",
+          "}"
+        ]
+      }
+    ],
+    "ruby": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "def is_even(n)",
+          "  n % 2 == 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "def is_odd(n)",
+          "  n % 2 != 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "def add(a, b)",
+          "  a + b",
+          "end"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "def subtract(a, b)",
+          "  a - b",
+          "end"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "def multiply(a, b)",
+          "  a * b",
+          "end"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "def divide(a, b)",
+          "  a / b",
+          "end"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "def remainder(a, b)",
+          "  a % b",
+          "end"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "def maximum(a, b)",
+          "  a > b ? a : b",
+          "end"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "def minimum(a, b)",
+          "  a < b ? a : b",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "def is_positive(n)",
+          "  n > 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "def is_negative(n)",
+          "  n < 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "def is_zero(n)",
+          "  n == 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "def square(n)",
+          "  n * n",
+          "end"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "def cube(n)",
+          "  n * n * n",
+          "end"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "def absolute(n)",
+          "  n.abs",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "def divisible_by_3(n)",
+          "  n % 3 == 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "def divisible_by_5(n)",
+          "  n % 5 == 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "def divisible_by_10(n)",
+          "  n % 10 == 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "def multiple_of_7(n)",
+          "  n % 7 == 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "def divisible_by_2_and_3(n)",
+          "  n % 2 == 0 && n % 3 == 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "def between_10_and_20(n)",
+          "  n >= 10 && n <= 20",
+          "end"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "def double_value(n)",
+          "  n * 2",
+          "end"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "def triple_value(n)",
+          "  n * 3",
+          "end"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "def increment(n)",
+          "  n + 1",
+          "end"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "def decrement(n)",
+          "  n - 1",
+          "end"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "def celsius_to_fahrenheit(c)",
+          "  (c * 9 / 5) + 32",
+          "end"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "def fahrenheit_to_celsius(f)",
+          "  (f - 32) * 5 / 9",
+          "end"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "def minutes_to_seconds(m)",
+          "  m * 60",
+          "end"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "def hours_to_minutes(h)",
+          "  h * 60",
+          "end"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "def average(a, b)",
+          "  (a + b) / 2.0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "def multiple_of_4(n)",
+          "  n % 4 == 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "def multiple_of_9(n)",
+          "  n % 9 == 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "def divisible_by_8(n)",
+          "  n % 8 == 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "def greater_than_100(n)",
+          "  n > 100",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "def less_than_0(n)",
+          "  n < 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "def last_digit(n)",
+          "  (n % 10).abs",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "def two_digit?(n)",
+          "  n >= 10 && n <= 99",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "def three_digit?(n)",
+          "  n >= 100 && n <= 999",
+          "end"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "def difference(a, b)",
+          "  (a - b).abs",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "def multiple_of_6(n)",
+          "  n % 6 == 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "def multiple_of_12(n)",
+          "  n % 12 == 0",
+          "end"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "def days_to_hours(d)",
+          "  d * 24",
+          "end"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "def weeks_to_days(w)",
+          "  w * 7",
+          "end"
+        ]
+      }
+    ],
+    "php": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "function isEven($n) {",
+          "    return $n % 2 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "function isOdd($n) {",
+          "    return $n % 2 != 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "function add($a, $b) {",
+          "    return $a + $b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "function subtract($a, $b) {",
+          "    return $a - $b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "function multiply($a, $b) {",
+          "    return $a * $b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "function divide($a, $b) {",
+          "    return $a / $b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "function remainder($a, $b) {",
+          "    return $a % $b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "function maxValue($a, $b) {",
+          "    return $a > $b ? $a : $b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "function minValue($a, $b) {",
+          "    return $a < $b ? $a : $b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "function isPositive($n) {",
+          "    return $n > 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "function isNegative($n) {",
+          "    return $n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "function isZero($n) {",
+          "    return $n == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "function square($n) {",
+          "    return $n * $n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "function cube($n) {",
+          "    return $n * $n * $n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "function absolute($n) {",
+          "    return abs($n);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "function divisibleBy3($n) {",
+          "    return $n % 3 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "function divisibleBy5($n) {",
+          "    return $n % 5 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "function divisibleBy10($n) {",
+          "    return $n % 10 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "function multipleOf7($n) {",
+          "    return $n % 7 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "function divisibleBy2And3($n) {",
+          "    return $n % 2 == 0 && $n % 3 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "function between10And20($n) {",
+          "    return $n >= 10 && $n <= 20;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "function doubleValue($n) {",
+          "    return $n * 2;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "function tripleValue($n) {",
+          "    return $n * 3;",
+          "}"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "function increment($n) {",
+          "    return $n + 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "function decrement($n) {",
+          "    return $n - 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "function celsiusToFahrenheit($c) {",
+          "    return ($c * 9 / 5) + 32;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "function fahrenheitToCelsius($f) {",
+          "    return ($f - 32) * 5 / 9;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "function minutesToSeconds($m) {",
+          "    return $m * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "function hoursToMinutes($h) {",
+          "    return $h * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "function average($a, $b) {",
+          "    return ($a + $b) / 2;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "function multipleOf4($n) {",
+          "    return $n % 4 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "function multipleOf9($n) {",
+          "    return $n % 9 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "function divisibleBy8($n) {",
+          "    return $n % 8 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "function greaterThan100($n) {",
+          "    return $n > 100;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "function lessThanZero($n) {",
+          "    return $n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "function lastDigit($n) {",
+          "    return abs($n % 10);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "function isTwoDigit($n) {",
+          "    return $n >= 10 && $n <= 99;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "function isThreeDigit($n) {",
+          "    return $n >= 100 && $n <= 999;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "function difference($a, $b) {",
+          "    return abs($a - $b);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "function multipleOf6($n) {",
+          "    return $n % 6 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "function multipleOf12($n) {",
+          "    return $n % 12 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "function daysToHours($d) {",
+          "    return $d * 24;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "function weeksToDays($w) {",
+          "    return $w * 7;",
+          "}"
+        ]
+      }
+    ],
+    "csharp": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "static bool IsEven(int n) {",
+          "    return n % 2 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "static bool IsOdd(int n) {",
+          "    return n % 2 != 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "static int Add(int a, int b) {",
+          "    return a + b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "static int Subtract(int a, int b) {",
+          "    return a - b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "static int Multiply(int a, int b) {",
+          "    return a * b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "static int Divide(int a, int b) {",
+          "    return a / b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "static int Remainder(int a, int b) {",
+          "    return a % b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "static int Max(int a, int b) {",
+          "    return a > b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "static int Min(int a, int b) {",
+          "    return a < b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "static bool IsPositive(int n) {",
+          "    return n > 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "static bool IsNegative(int n) {",
+          "    return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "static bool IsZero(int n) {",
+          "    return n == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "static int Square(int n) {",
+          "    return n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "static int Cube(int n) {",
+          "    return n * n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "static int Absolute(int n) {",
+          "    return Math.Abs(n);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "static bool DivisibleBy3(int n) {",
+          "    return n % 3 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "static bool DivisibleBy5(int n) {",
+          "    return n % 5 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "static bool DivisibleBy10(int n) {",
+          "    return n % 10 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "static bool MultipleOf7(int n) {",
+          "    return n % 7 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "static bool DivisibleBy2And3(int n) {",
+          "    return n % 2 == 0 && n % 3 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "static bool Between10And20(int n) {",
+          "    return n >= 10 && n <= 20;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "static int DoubleValue(int n) {",
+          "    return n * 2;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "static int TripleValue(int n) {",
+          "    return n * 3;",
+          "}"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "static int Increment(int n) {",
+          "    return n + 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "static int Decrement(int n) {",
+          "    return n - 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "static double CelsiusToFahrenheit(double c) {",
+          "    return (c * 9 / 5) + 32;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "static double FahrenheitToCelsius(double f) {",
+          "    return (f - 32) * 5 / 9;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "static int MinutesToSeconds(int m) {",
+          "    return m * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "static int HoursToMinutes(int h) {",
+          "    return h * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "static double Average(int a, int b) {",
+          "    return (a + b) / 2.0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "static bool MultipleOf4(int n) {",
+          "    return n % 4 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "static bool MultipleOf9(int n) {",
+          "    return n % 9 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "static bool DivisibleBy8(int n) {",
+          "    return n % 8 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "static bool GreaterThan100(int n) {",
+          "    return n > 100;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "static bool LessThanZero(int n) {",
+          "    return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "static int LastDigit(int n) {",
+          "    return Math.Abs(n % 10);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "static bool IsTwoDigit(int n) {",
+          "    return n >= 10 && n <= 99;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "static bool IsThreeDigit(int n) {",
+          "    return n >= 100 && n <= 999;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "static int Difference(int a, int b) {",
+          "    return Math.Abs(a - b);",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "static bool MultipleOf6(int n) {",
+          "    return n % 6 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "static bool MultipleOf12(int n) {",
+          "    return n % 12 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "static int DaysToHours(int d) {",
+          "    return d * 24;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "static int WeeksToDays(int w) {",
+          "    return w * 7;",
+          "}"
+        ]
+      }
+    ],
+    "cpp": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "bool isEven(int n) {",
+          "    return n % 2 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "bool isOdd(int n) {",
+          "    return n % 2 != 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "int add(int a, int b) {",
+          "    return a + b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "int subtract(int a, int b) {",
+          "    return a - b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "int multiply(int a, int b) {",
+          "    return a * b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "int divide(int a, int b) {",
+          "    return a / b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "int remainder(int a, int b) {",
+          "    return a % b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "int max(int a, int b) {",
+          "    return a > b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "int min(int a, int b) {",
+          "    return a < b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "bool isPositive(int n) {",
+          "    return n > 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "bool isNegative(int n) {",
+          "    return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "bool isZero(int n) {",
+          "    return n == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "int square(int n) {",
+          "    return n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "int cube(int n) {",
+          "    return n * n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "int absolute(int n) {",
+          "    return n < 0 ? -n : n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "bool divisibleBy3(int n) {",
+          "    return n % 3 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "bool divisibleBy5(int n) {",
+          "    return n % 5 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "bool divisibleBy10(int n) {",
+          "    return n % 10 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "bool multipleOf7(int n) {",
+          "    return n % 7 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "bool divisibleBy2And3(int n) {",
+          "    return n % 2 == 0 && n % 3 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "bool between10And20(int n) {",
+          "    return n >= 10 && n <= 20;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "int doubleValue(int n) {",
+          "    return n * 2;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "int tripleValue(int n) {",
+          "    return n * 3;",
+          "}"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "int increment(int n) {",
+          "    return n + 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "int decrement(int n) {",
+          "    return n - 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "double celsiusToFahrenheit(double c) {",
+          "    return (c * 9 / 5) + 32;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "double fahrenheitToCelsius(double f) {",
+          "    return (f - 32) * 5 / 9;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "int minutesToSeconds(int m) {",
+          "    return m * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "int hoursToMinutes(int h) {",
+          "    return h * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "double average(int a, int b) {",
+          "    return (a + b) / 2.0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "bool multipleOf4(int n) {",
+          "    return n % 4 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "bool multipleOf9(int n) {",
+          "    return n % 9 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "bool divisibleBy8(int n) {",
+          "    return n % 8 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "bool greaterThan100(int n) {",
+          "    return n > 100;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "bool lessThanZero(int n) {",
+          "    return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "int lastDigit(int n) {",
+          "    return n < 0 ? -(n % 10) : n % 10;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "bool isTwoDigit(int n) {",
+          "    return n >= 10 && n <= 99;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "bool isThreeDigit(int n) {",
+          "    return n >= 100 && n <= 999;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "int difference(int a, int b) {",
+          "    return a > b ? a - b : b - a;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "bool multipleOf6(int n) {",
+          "    return n % 6 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "bool multipleOf12(int n) {",
+          "    return n % 12 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "int daysToHours(int d) {",
+          "    return d * 24;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "int weeksToDays(int w) {",
+          "    return w * 7;",
+          "}"
+        ]
+      }
+    ],
+    "c": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "int isEven(int n) {",
+          "    return n % 2 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "int isOdd(int n) {",
+          "    return n % 2 != 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "int add(int a, int b) {",
+          "    return a + b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "int subtract(int a, int b) {",
+          "    return a - b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "int multiply(int a, int b) {",
+          "    return a * b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "int divide(int a, int b) {",
+          "    return a / b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "int remainder(int a, int b) {",
+          "    return a % b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "int max(int a, int b) {",
+          "    return a > b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "int min(int a, int b) {",
+          "    return a < b ? a : b;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "int isPositive(int n) {",
+          "    return n > 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "int isNegative(int n) {",
+          "    return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "int isZero(int n) {",
+          "    return n == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "int square(int n) {",
+          "    return n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "int cube(int n) {",
+          "    return n * n * n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "int absolute(int n) {",
+          "    return n < 0 ? -n : n;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "int divisibleBy3(int n) {",
+          "    return n % 3 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "int divisibleBy5(int n) {",
+          "    return n % 5 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "int divisibleBy10(int n) {",
+          "    return n % 10 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "int multipleOf7(int n) {",
+          "    return n % 7 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "int divisibleBy2And3(int n) {",
+          "    return n % 2 == 0 && n % 3 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "int between10And20(int n) {",
+          "    return n >= 10 && n <= 20;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "int doubleValue(int n) {",
+          "    return n * 2;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "int tripleValue(int n) {",
+          "    return n * 3;",
+          "}"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "int increment(int n) {",
+          "    return n + 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "int decrement(int n) {",
+          "    return n - 1;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "float celsiusToFahrenheit(float c) {",
+          "    return (c * 9 / 5) + 32;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "float fahrenheitToCelsius(float f) {",
+          "    return (f - 32) * 5 / 9;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "int minutesToSeconds(int m) {",
+          "    return m * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "int hoursToMinutes(int h) {",
+          "    return h * 60;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "float average(int a, int b) {",
+          "    return (a + b) / 2.0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "int multipleOf4(int n) {",
+          "    return n % 4 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "int multipleOf9(int n) {",
+          "    return n % 9 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "int divisibleBy8(int n) {",
+          "    return n % 8 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "int greaterThan100(int n) {",
+          "    return n > 100;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "int lessThanZero(int n) {",
+          "    return n < 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "int lastDigit(int n) {",
+          "    return n < 0 ? -(n % 10) : n % 10;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "int isTwoDigit(int n) {",
+          "    return n >= 10 && n <= 99;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "int isThreeDigit(int n) {",
+          "    return n >= 100 && n <= 999;",
+          "}"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "int difference(int a, int b) {",
+          "    return a > b ? a - b : b - a;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "int multipleOf6(int n) {",
+          "    return n % 6 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "int multipleOf12(int n) {",
+          "    return n % 12 == 0;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "int daysToHours(int d) {",
+          "    return d * 24;",
+          "}"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "int weeksToDays(int w) {",
+          "    return w * 7;",
+          "}"
+        ]
+      }
+    ],
     "java": [
       {
         "question": "Check if a number is even",
