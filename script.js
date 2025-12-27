@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const LEVEL_ORDER = ['beginner', 'intermediate', 'advanced'];
 
+  /*
   // ---------- UTILS ----------
   function shuffle(array) {
     const a = [...array];
@@ -30,6 +31,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     return a;
   }
+  */
+  function shuffle(array) {
+  let a = [...array];
+  if (a.length <= 1) return a;  // Can't shuffle
+
+  // Standard Fisher-Yates
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+
+  // If accidentally same as original (common for length 2-3), reshuffle once
+  if (a.length <= 4 && a.every((val, idx) => val === array[idx])) {
+    return shuffle(array);  // Recurse once for a different order
+  }
+
+  return a;
+}
 
   function saveProgress() {
     localStorage.setItem(
