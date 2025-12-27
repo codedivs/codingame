@@ -1,5 +1,351 @@
 {
   "beginner": {
+    "matlab": [
+      {
+        "question": "Check if a number is even",
+        "code": [
+          "function result = is_even(n)",
+          "    result = mod(n, 2) == 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if a number is odd",
+        "code": [
+          "function result = is_odd(n)",
+          "    result = mod(n, 2) ~= 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Add two numbers",
+        "code": [
+          "function result = add(a, b)",
+          "    result = a + b;",
+          "end"
+        ]
+      },
+      {
+        "question": "Subtract two numbers",
+        "code": [
+          "function result = subtract(a, b)",
+          "    result = a - b;",
+          "end"
+        ]
+      },
+      {
+        "question": "Multiply two numbers",
+        "code": [
+          "function result = multiply(a, b)",
+          "    result = a * b;",
+          "end"
+        ]
+      },
+      {
+        "question": "Divide two numbers",
+        "code": [
+          "function result = divide(a, b)",
+          "    result = a / b;",
+          "end"
+        ]
+      },
+      {
+        "question": "Return remainder of two numbers",
+        "code": [
+          "function result = remainder(a, b)",
+          "    result = mod(a, b);",
+          "end"
+        ]
+      },
+      {
+        "question": "Find maximum of two numbers",
+        "code": [
+          "function result = maximum(a, b)",
+          "    result = max(a, b);",
+          "end"
+        ]
+      },
+      {
+        "question": "Find minimum of two numbers",
+        "code": [
+          "function result = minimum(a, b)",
+          "    result = min(a, b);",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is positive",
+        "code": [
+          "function result = is_positive(n)",
+          "    result = n > 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is negative",
+        "code": [
+          "function result = is_negative(n)",
+          "    result = n < 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is zero",
+        "code": [
+          "function result = is_zero(n)",
+          "    result = n == 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Calculate square of a number",
+        "code": [
+          "function result = square(n)",
+          "    result = n^2;",
+          "end"
+        ]
+      },
+      {
+        "question": "Calculate cube of a number",
+        "code": [
+          "function result = cube(n)",
+          "    result = n^3;",
+          "end"
+        ]
+      },
+      {
+        "question": "Return absolute value",
+        "code": [
+          "function result = absolute(n)",
+          "    result = abs(n);",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 3",
+        "code": [
+          "function result = divisible_by_3(n)",
+          "    result = mod(n, 3) == 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 5",
+        "code": [
+          "function result = divisible_by_5(n)",
+          "    result = mod(n, 5) == 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 10",
+        "code": [
+          "function result = divisible_by_10(n)",
+          "    result = mod(n, 10) == 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 7",
+        "code": [
+          "function result = multiple_of_7(n)",
+          "    result = mod(n, 7) == 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by both 2 and 3",
+        "code": [
+          "function result = divisible_by_2_and_3(n)",
+          "    result = mod(n, 2) == 0 && mod(n, 3) == 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is between 10 and 20",
+        "code": [
+          "function result = between_10_and_20(n)",
+          "    result = n >= 10 && n <= 20;",
+          "end"
+        ]
+      },
+      {
+        "question": "Return double of a number",
+        "code": [
+          "function result = double_value(n)",
+          "    result = n * 2;",
+          "end"
+        ]
+      },
+      {
+        "question": "Return triple of a number",
+        "code": [
+          "function result = triple_value(n)",
+          "    result = n * 3;",
+          "end"
+        ]
+      },
+      {
+        "question": "Increment a number by 1",
+        "code": [
+          "function result = increment(n)",
+          "    result = n + 1;",
+          "end"
+        ]
+      },
+      {
+        "question": "Decrement a number by 1",
+        "code": [
+          "function result = decrement(n)",
+          "    result = n - 1;",
+          "end"
+        ]
+      },
+      {
+        "question": "Convert Celsius to Fahrenheit",
+        "code": [
+          "function result = celsius_to_fahrenheit(c)",
+          "    result = (c * 9/5) + 32;",
+          "end"
+        ]
+      },
+      {
+        "question": "Convert Fahrenheit to Celsius",
+        "code": [
+          "function result = fahrenheit_to_celsius(f)",
+          "    result = (f - 32) * 5/9;",
+          "end"
+        ]
+      },
+      {
+        "question": "Convert minutes to seconds",
+        "code": [
+          "function result = minutes_to_seconds(m)",
+          "    result = m * 60;",
+          "end"
+        ]
+      },
+      {
+        "question": "Convert hours to minutes",
+        "code": [
+          "function result = hours_to_minutes(h)",
+          "    result = h * 60;",
+          "end"
+        ]
+      },
+      {
+        "question": "Return average of two numbers",
+        "code": [
+          "function result = average(a, b)",
+          "    result = (a + b) / 2;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 4",
+        "code": [
+          "function result = multiple_of_4(n)",
+          "    result = mod(n, 4) == 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 9",
+        "code": [
+          "function result = multiple_of_9(n)",
+          "    result = mod(n, 9) == 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is divisible by 8",
+        "code": [
+          "function result = divisible_by_8(n)",
+          "    result = mod(n, 8) == 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is greater than 100",
+        "code": [
+          "function result = greater_than_100(n)",
+          "    result = n > 100;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is less than 0",
+        "code": [
+          "function result = less_than_0(n)",
+          "    result = n < 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Return last digit of a number",
+        "code": [
+          "function result = last_digit(n)",
+          "    result = mod(abs(n), 10);",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is two-digit",
+        "code": [
+          "function result = is_two_digit(n)",
+          "    result = n >= 10 && n <= 99;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is three-digit",
+        "code": [
+          "function result = is_three_digit(n)",
+          "    result = n >= 100 && n <= 999;",
+          "end"
+        ]
+      },
+      {
+        "question": "Return difference of two numbers",
+        "code": [
+          "function result = difference(a, b)",
+          "    result = abs(a - b);",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 6",
+        "code": [
+          "function result = multiple_of_6(n)",
+          "    result = mod(n, 6) == 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Check if number is multiple of 12",
+        "code": [
+          "function result = multiple_of_12(n)",
+          "    result = mod(n, 12) == 0;",
+          "end"
+        ]
+      },
+      {
+        "question": "Convert days to hours",
+        "code": [
+          "function result = days_to_hours(d)",
+          "    result = d * 24;",
+          "end"
+        ]
+      },
+      {
+        "question": "Convert weeks to days",
+        "code": [
+          "function result = weeks_to_days(w)",
+          "    result = w * 7;",
+          "end"
+        ]
+      }
+    ],
     "r": [
       {
         "question": "Check if a number is even",
